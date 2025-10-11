@@ -83,8 +83,8 @@ def generate_content(topic: str):
                 7. Каждый абзац должен быть не менее 3-4 предложений
                 8. Текст должен быть легким для восприятия и содержательным"""
             }],
-            max_tokens=750,  # Лимит токенов для развернутого текста
-            temperature=0.5,
+            max_tokens=400,  # Лимит токенов для развернутого текста
+        temperature=0.5,
             presence_penalty=0.6,  # Штраф за повторение фраз
             frequency_penalty=0.6
         ).choices[0].message.content.strip()
